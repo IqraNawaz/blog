@@ -23,7 +23,7 @@ email: iqranawaz0315@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am a Software Engineering graduate.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "iqranawaz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "qranawaz.github.io/blog/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: iqranawaz0315
 github_username:  IqraNawaz
 codepen_username: iqranawaz0315
@@ -31,8 +31,7 @@ disqus:
   shortname: iqra-4
 
 # Build settings
-jekyll: 
-  environment: production
+
 theme: minima
 plugins:
   - jekyll-feed
