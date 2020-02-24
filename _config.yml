@@ -31,6 +31,8 @@ disqus:
   Shortname: iqra-4
 
 # Build settings
+jekyll: 
+  environment: production
 theme: minima
 plugins:
   - jekyll-feed
