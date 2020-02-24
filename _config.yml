@@ -27,11 +27,14 @@ url: "iqranawaz.github.io" # the base hostname & protocol for your site, e.g. ht
 twitter_username: iqranawaz0315
 github_username:  IqraNawaz
 codepen_username: iqranawaz0315
+disqus:
+  Shortname: iqra-4
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
