@@ -7,8 +7,7 @@ categories: jekyll update
 permalink: /adding-disqus-to-jekyll/
 ---
 
-Okay so, I thought why not start the blog with something relatively simple and which I have 
-done recently so maybe others can also easily do it.
+Okay so, I thought why not start the blog with something relatively simple and which I have done recently so maybe others can also easily do it.
 If you have got your static jekyll site and want to add comments on the amazing articles that you would write in the future, look no further.
 
 
