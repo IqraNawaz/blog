@@ -55,13 +55,12 @@ That is it for setting up the variables, now all you have to do is add
  
 {% highlight ruby %}
   ---
-
   comments: true
-
   ---
 {% endhighlight %}
 
 Thats it your disqus comment box should be visible below your posts.
+If you have any questions feel free to ask me.
 
 _Note:
   In my case I could not get around to changing the environment variable so I have removed the condition for enviornment variable for now so that disqus appears here. I will update the article as soon as I find the way to change the enviornment variable._

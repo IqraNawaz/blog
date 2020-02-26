@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-02-26T22:20:09+05:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Coding</title><subtitle>I am a Software Engineering graduate.</subtitle><entry><title type="html">Adding Disqus to your Static Jekyll Site!</title><link href="http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html" rel="alternate" type="text/html" title="Adding Disqus to your Static Jekyll Site!" /><published>2020-01-30T15:45:26+05:00</published><updated>2020-01-30T15:45:26+05:00</updated><id>http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html">&lt;p&gt;Okay so, I thought why not start the blog with something relatively simple and which I have 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-02-26T22:23:58+05:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Coding</title><subtitle>I am a Software Engineering graduate.</subtitle><entry><title type="html">Adding Disqus to your Static Jekyll Site!</title><link href="http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html" rel="alternate" type="text/html" title="Adding Disqus to your Static Jekyll Site!" /><published>2020-01-30T15:45:26+05:00</published><updated>2020-01-30T15:45:26+05:00</updated><id>http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html">&lt;p&gt;Okay so, I thought why not start the blog with something relatively simple and which I have 
 done recently so maybe others can also easily do it.
 If you have got your static jekyll site and want to add comments on the amazing articles that you would write in the future, look no further.&lt;/p&gt;
 
@@ -39,12 +39,11 @@ If you have got your static jekyll site and want to add comments on the amazing 
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;comments: true&lt;/code&gt; in post’s YAML front matter(you need to specify it for every post so that you can disable comments of any post you wish to).&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;  &lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
-
   &lt;span class=&quot;ss&quot;&gt;comments: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
-
   &lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Thats it your disqus comment box should be visible below your posts.&lt;/p&gt;
+&lt;p&gt;Thats it your disqus comment box should be visible below your posts.
+If you have any questions feel free to ask me.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Note:
   In my case I could not get around to changing the environment variable so I have removed the condition for enviornment variable for now so that disqus appears here. I will update the article as soon as I find the way to change the enviornment variable.&lt;/em&gt;&lt;/p&gt;
