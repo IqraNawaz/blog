@@ -35,8 +35,7 @@ disqus:
 theme: minima
 plugins:
   - jekyll-feed
-jekyll:
-  environment: production
+environment: production
 
 
 # Exclude from processing.

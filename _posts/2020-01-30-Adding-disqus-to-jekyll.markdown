@@ -61,13 +61,18 @@ That is it for setting up the variables, now all you have to do is add
   ---
 {% endhighlight %}
 
+Thats it your disqus comment box should be visible below your posts.
+
 _Note:
   In my case I could not get around to changing the environment variable so I have removed the condition for enviornment variable for now so that disqus appears here. I will update the article as soon as I find the way to change the enviornment variable._
   
   _You may also have to wait a couple of hours before the disqus box starts showing properly on your published site._
+
+  _You also want to take into consideration that after every push or update you make to your site it may take disqus to appear after a few minutes or hours._
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 [disqus-signUp]: https://disqus.com/profile/login/
+[troubleshooting-guide]: https://help.disqus.com/en/articles/1717301-i-m-receiving-the-message-we-were-unable-to-load-disqus
