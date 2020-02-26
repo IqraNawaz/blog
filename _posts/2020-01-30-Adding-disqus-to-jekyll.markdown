@@ -4,6 +4,7 @@ comments: true
 title:  "Adding Disqus to your Static Jekyll Site!"
 date:   2020-01-30 15:45:26 +0500
 categories: jekyll update
+permalink: /adding-disqus-to-jekyll/
 ---
 
 Okay so, I thought why not start the blog with something relatively simple and which I have 
