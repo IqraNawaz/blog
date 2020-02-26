@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Adding Disqus to your Static Jekyll Site! | Coding</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Adding Disqus to your Static Jekyll Site!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Okay so, I thought why not start the blog with something relatively simple and which I have done recently so maybe others can also easily do it. If you have got your static jekyll site and want to add comments on the amazing articles that you would write in the future, look no further." />
+<meta property="og:description" content="Okay so, I thought why not start the blog with something relatively simple and which I have done recently so maybe others can also easily do it. If you have got your static jekyll site and want to add comments on the amazing articles that you would write in the future, look no further." />
+<link rel="canonical" href="http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html" />
+<meta property="og:site_name" content="Coding" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-30T15:45:26+05:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Adding Disqus to your Static Jekyll Site!","dateModified":"2020-01-30T15:45:26+05:00","datePublished":"2020-01-30T15:45:26+05:00","url":"http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html"},"description":"Okay so, I thought why not start the blog with something relatively simple and which I have done recently so maybe others can also easily do it. If you have got your static jekyll site and want to add comments on the amazing articles that you would write in the future, look no further.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Coding" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Coding</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Adding Disqus to your Static Jekyll Site!</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-01-30T15:45:26+05:00" itemprop="datePublished">Jan 30, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Okay so, I thought why not start the blog with something relatively simple and which I have 
+done recently so maybe others can also easily do it.
+If you have got your static jekyll site and want to add comments on the amazing articles that you would write in the future, look no further.</p>
+
+<p>At first you want to make sure that you have registered on the <a href="https://disqus.com/profile/login/">Disqus</a> site and that you know what your <code class="language-plaintext highlighter-rouge">shortname</code> is.</p>
+
+<p>After that you want to add a directory named <code class="language-plaintext highlighter-rouge">_includes</code> to your folder you are working in and add a file in it named <code class="language-plaintext highlighter-rouge">disqus_comments.html</code> and then add the following universal code provided to you when you were setting up the disqus account. Which will look like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> 
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"disqus_thread"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="kd">var</span> <span class="nx">disqus_config</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span> <span class="o">=</span> <span class="nx">PAGE_URL</span><span class="p">;</span> <span class="c1">// Replace PAGE_URL with your page's canonical URL variable</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">identifier</span> <span class="o">=</span> <span class="nx">PAGE_IDENTIFIER</span><span class="p">;</span> <span class="c1">// Replace PAGE_IDENTIFIER with your page's unique identifier variable</span>
+      <span class="p">};</span>
+
+      <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>  <span class="c1">// DON'T EDIT BELOW THIS LINE</span>
+        <span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="nb">document</span><span class="p">,</span> <span class="nx">s</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">);</span>
+
+        <span class="nx">s</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://shortname.disqus.com/embed.js</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// here will be the variable for your shortname in place of example written like this " iqranawaz " </span>
+
+        <span class="nx">s</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">data-timestamp</span><span class="dl">'</span><span class="p">,</span> <span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+        <span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">head</span> <span class="o">||</span> <span class="nx">d</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+      <span class="p">})();</span>
+    <span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>The above code will be wrapped in and if statement <code class="language-plaintext highlighter-rouge">if page.comments != false</code> and<br />
+<code class="language-plaintext highlighter-rouge">jekyll.environment ==production</code>; By default the jekyll.environment is set to <code class="language-plaintext highlighter-rouge">developement</code> which disables the comments hence it needs to be changed to production for disqus comments to work. It can be done by running the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">JEKYLL_ENV=production bundle exec jekyll buid</code></p>
+
+<p>Now we need to update the <code class="language-plaintext highlighter-rouge">_config.yml</code> file as follows:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="ss">disqus:
+    shortname: </span><span class="n">yourShortName</span></code></pre></figure>
+
+<p>That is it for setting up the variables, now all you have to do is add
+<code class="language-plaintext highlighter-rouge">comments: true</code> in post’s YAML front matter(you need to specify it for every post so that you can disable comments of any post you wish to).</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="o">---</span>
+
+  <span class="ss">comments: </span><span class="kp">true</span>
+
+  <span class="o">---</span></code></pre></figure>
+
+<p><em>Note:
+  In my case I could not get around to changing the environment variable so I have removed the condition for enviornment variable for now so that disqus appears here. I will update the article as soon as I find the way to change the enviornment variable.</em></p>
+
+<p><em>You may also have to wait a couple of hours before the disqus box starts showing properly on your published site.</em></p>
+
+
+  </div><div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html';
+      this.page.identifier = 'http://localhost:4000/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://iqranawaz.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script><a class="u-url" href="/blog/jekyll/update/2020/01/30/Adding-disqus-to-jekyll.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Coding</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Coding</li><li><a class="u-email" href="mailto:iqranawaz0315@gmail.com">iqranawaz0315@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/IqraNawaz"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">IqraNawaz</span></a></li><li><a href="https://www.twitter.com/iqranawaz0315"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">iqranawaz0315</span></a></li><li><a href="https://codepen.io/iqranawaz0315"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#codepen"></use></svg> <span class="username">iqranawaz0315</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>I am a Software Engineering graduate.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
