@@ -1,6 +1,6 @@
 ---
 layout: post
-description: A walkthrough of the steps to follow if you want to add diqus comments on a static jekyll site hosted on githubPages
+description: Adding disqus comments to static jekyll site hosted on githubPages.
 comments: true
 title:  "Adding Disqus to Static Jekyll Site!"
 date:   2020-01-30 15:45:26 +0500
