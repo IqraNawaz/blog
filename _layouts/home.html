@@ -20,6 +20,13 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
+
+          {{%- if post.description-%}}
+            
+            <span class="post-meta">
+              {{post.description}}
+            </span>
+          {{%- endif -%}}
         </h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
