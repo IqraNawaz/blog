@@ -1,11 +1,11 @@
 ---
 layout: post
-description: A walkthrough of the steps to follow if you want to add diqus comments on a static jekyll site hosted on githubPages
+description: Learn react as I Learn it.
 comments: true
-title:  "Adding Disqus to Static Jekyll Site!"
-date:   2020-01-30 15:45:26 +0500
+title:  "Learn react!"
+date:   2020-03-05 15:45:26 +0500
 categories: jekyll update
-permalink: /adding-disqus-to-jekyll/
+permalink: /lets-learn-react-together/
 ---
 
 Okay so, I thought why not start the blog with something relatively simple and which I have done recently so maybe others can also easily do it.
