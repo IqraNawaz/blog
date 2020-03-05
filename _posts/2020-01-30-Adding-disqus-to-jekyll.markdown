@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Adding Disqus to your Static Jekyll Site!"
+title:  "Adding Disqus to Static Jekyll Site!"
 date:   2020-01-30 15:45:26 +0500
 categories: jekyll update
 permalink: /adding-disqus-to-jekyll/

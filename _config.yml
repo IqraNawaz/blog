@@ -34,9 +34,12 @@ disqus:
 # Build settings
 
 theme: minima
-plugins:
-  - jekyll-feed
+plugins: 
+  [jekyll-feed, jekyll-sitemap, jekyll-seo-tag]
+   
+  
 environment: "production"
+safe: false
 
 
 # Exclude from processing.
